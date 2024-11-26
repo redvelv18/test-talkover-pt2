@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pārbaudes darba praktiskā daļa</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1,
+      h2,
+      h3 {
+        color: #444;
+      }
+      ol {
+        margin: 15px 0;
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      pre {
+        background: #f9f9f9;
+        padding: 10px;
+        border-left: 4px solid #007bff;
+        overflow-x: auto;
+      }
+
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pārbaudes darba praktiskā daļa</h1>
+      <p><strong>Nosacījumi:</strong></p>
+      <ol>
+        <li>Atļauts izmantot tikai <em>devdocs.io</em> vietni</li>
+        <li>
+          Nedrīkst izmantot citus resursus, tajā skaitā, kodu no citiem
+          projektiem uz darbstacijas
+        </li>
+        <li>
+          Darbs ir jāpilda patstāvīgi bez komunikācijas ar citām personām,
+          izņemot pasniedzēju.
+        </li>
+        <li>
+          Atslēgvārdi:
+          <em
+            >h1-h6, p, ul, li, form, input, label, select, button, lorem50,
+            width, margin, display, box-sizing, node, let, const, if, array,
+            object, function, return, document, getElementById,
+            addEventListener, value, parseInt</em
+          >
+        </li>
+      </ol>
+      <h2>1. uzdevums</h2>
+      <ol>
+        <li>
+          Lokāli sava vārda mapē izveidot jaunu HTML projektu
+          “WEB-1k-PD-22112024”
+        </li>
+        <li>Lokāli versionēt projektu ar Git</li>
+      </ol>
+      <h2>2. uzdevums</h2>
+      <ol>
+        <li>
+          Izveidot <em>index.html</em> failu un ‘boilerplate’ HTML kodu tajā
+        </li>
+        <li>
+          <em>index.html</em> failā izveidot virsrakstu “Piesakies webināram!”
+          un HTML pieteikuma formu (izmantojot apzīmējumus jeb <em>label</em>).
+          Formā jābūt iespējai norādīt vārdu, e-pastu, kursa līmeni (‘Beginner’,
+          ‘Intermediate’, ‘Advanced’) ar izkrītošo izvēlni (‘select’). Un,
+          protams, jābūt formas apstiprināšanas pogai.
+        </li>
+      </ol>
+      <h2>3. uzdevums</h2>
+      <ol>
+        <li>
+          <em>index.html</em> failam pievienot ārēju CSS failu
+          <em>style.css</em>
+        </li>
+        <li>Ar CSS palīdzību noteikt formai konkrētu platumu un iecentrēt</li>
+        <li>
+          Ar CSS palīdzību formas apzīmējumus un ievades laukus novietot katru
+          savā rindā
+        </li>
+        <li>
+          Ievades laukiem jāaizņem viss formas platums, bet tie nedrīkst
+          pārsniegt formas robežas
+        </li>
+      </ol>
+      <h2>4. uzdevums</h2>
+      <ol>
+        <li>
+          Izveidot <em>about.html</em> failu (vienā līmenī ar
+          <em>index.html</em>), kurā jāizveido galvenais virsraksts “Par mani”,
+          bet zem tā divi vienāda līmeņa apakšvirsraksti “Biogrāfija” un “Kāpēc
+          es vēlos kļūt par programmētaju?”.
+        </li>
+        <li>
+          Biogrāfijas sadaļā jābūt paragrāfam ar 30 vārdu garu gadījuma jeb
+          'random' tekstu, bet otrajā apakšsadaļā jābūt sarakstam (izmantojot
+          attiecīgus HTML elementus) ar 3 iemesliem, kāpēc tu vēlies kļūt par
+          programmētāju.
+        </li>
+      </ol>
+      <h2>5. uzdevums</h2>
+      <ol>
+        <li>
+          Izveidot Javascript failu <em>basics.js</em>, kas
+          <strong>nav</strong> jāpievieno nevienam no <em>.html</em> failiem.
+          Fails paredzēts izpildei ar
+          <em>Node</em>
+          programmu.
+        </li>
+        <li>
+          <em>basics.js</em> failā izveidot mainīgo <em>personAge</em> ar
+          vērtību <em>17</em>.
+        </li>
+        <li>
+          Izveidot nosacījumu, kas pārbauda personas vecumu. Ja persona ir
+          pilngadīga, tad izvadīt paziņojumu “Pilngadīgs!”, bet pretējā gadījumā
+          - “Nepilngadīgs!”.
+        </li>
+        <li>
+          Izveidot masīvu <em>namesArray</em> ar 3 personu vārdiem, piem.,
+          “Jānis”, “Anna” un “Zaiga”.
+        </li>
+        <li>
+          Izveidot <em>for</em> ciklu, kas izvada konsolē katru vārdu no
+          <em>namesArray</em> masīva.
+        </li>
+        <li>
+          Izveidot funkciju <em>sayHello</em> ar vienu parametru name. Funkcija
+          atgriež tekstu, kas sasveicinās ar attiecīgo personu, piem., “Labdien,
+          Elza!” vai “Labdien, Jānis!”, atkarībā no padotā argumenta.
+        </li>
+        <li>
+          Izsauc funkciju <em>sayHello</em> ar savu vārdu kā argumentu un
+          atgriezto rezultātu izvadi konsolē.
+        </li>
+      </ol>
+      <h2>6. uzdevums</h2>
+      <ol>
+        <li>
+          Izveidot <em>calculator.html</em> failu (vienā līmenī ar
+          <em>index.html</em>).
+        </li>
+        <li>
+          Šajā failā izveidot “Calculator” aplikāciju kā redzams divos paraugos,
+          bet ar četrām pamatdarbībām: saskaitīšana, atņemšana, reizināšana un
+          dalīšana.
+        </li>
+      </ol>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIAO</title>
+</head>
+
+<body>
+
+    <input type="number" id="num1">
+    <input type="text" id="operator">
+    <input type="number" id="num2">
+    <button type="submit" id="sub">Meow</button>
+    <p id="output"> </p>
+
+    <script>
+
+        let numberOne = document.getElementById("num1");
+        let numberOperator = document.getElementById("operator");
+        let numberTwo = document.getElementById("num2");
+        let numberSub = document.getElementById("sub");
+        let output = document.getElementById("output");
+
+        numberSub.addEventListener("click", processClick)
+
+        function processClick() {
+            let num1 = parseInt(numberOne.value);
+            let num2 = parseInt(numberTwo.value);
+            let op = numberOperator.value;
+
+            output.innerHTML = answerText + calculate(num1, op, num2);
+        }
+
+
+        let answerText = ("Meow: ");
+
+        function calculate(num1, op, num2) {
+            if (op == "+") {
+                return (`${num1 + num2}`);
+            }
+            else if (op == "-") {
+                return (`${num1 - num2}`);
+            }
+            else if (op == "*") {
+                return (`${num1 * num2}`);
+            }
+            else if (op == "/") {
+                return (`${num1 / num2}`);
+            }
+            else {
+                return (`Not a valid statement!`);
+            }
+        }
+        
+    </script>
+</body>
+
+</html>
